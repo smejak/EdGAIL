@@ -72,3 +72,18 @@ From the sections above, the following list of actions is extracted:
 - `pay`
 - `refund`
 - `enroll_coupon`
+
+## States
+
+The agent will take actions in an environment. At each timestep, the environment can be described by states and it is assumed that the agent has access to all states at any point in time. Furthermore, the imitation learning agent will learn how the expert policy influences the states.
+
+- `timestamp` (the moment the question was given)
+- `solving_id`
+- `question_id`
+- `item_id`
+- `source`
+- `after_sprint`
+- `after_review`
+- `archive`
+- `adaptive_offer`
+- `todays_recommendatin::lecture`
